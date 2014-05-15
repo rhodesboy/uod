@@ -220,12 +220,15 @@
 </div>
 
 
+
+<div class="course-cta">
+
+
+
 <a href="#" class="btn btn-default">How to Apply</a>
 <a href="#" class="btn btn-default">Visit us</a>
 <a href="#" class="btn btn-default">Get a Prospectus</a>
 
-
-<!-- Small button group -->
 <div class="btn-group">
   <button class="btn btn-grey-dark dropdown-toggle" type="button" data-toggle="dropdown">
     Share <i class="fa fa-share"></i>
@@ -233,31 +236,12 @@
   <ul class="dropdown-menu" role="menu">
     <li><a href="../icon/print"><i class="fa fa-print"></i> Print</a></li>
     <li><a href="../icon/print"><i class="fa fa-envelope"></i> Email</a></li>
-    <li><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.dundee.ac.uk/undergraduate/courses/medicine.htm" layout="button_count" show_faces="false" width="380" action="recommend"></fb:like></li>
-    <li>
-<!-- Recommends  - Google Plus-->  	
-					<!-- Place this tag where you want the +1 button to render. -->
-					<div class="g-plusone" data-size="medium" data-href="http://www.dundee.ac.uk/undergraduate/courses/medicine.htm"></div>	
-								<!-- Place this tag after the last +1 button tag. -->
-								<script type="text/javascript">
-								  window.___gcfg = {lang: 'en-GB'};
-								
-								  (function() {
-								    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-								    po.src = 'https://apis.google.com/js/plusone.js';
-								    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-								  })();
-								</script> </li>
-    
-    
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
+      </ul>
 </div>
 
+</div>
 
-
-            <ul class="nav  nav-pills" id="course-nav">
+            <ul class="nav course-nav nav-pills">
         <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
   <li><a href="#why" data-toggle="tab">Why Dundee?</a></li>
   <li><a href="#what" data-toggle="tab">What You'll Study</a></li>
@@ -289,7 +273,15 @@
   <div class="tab-pane fade " id="why"><h3>Why study Medicine at Dundee?</h3>
 			<p>In Dundee you have the opportunity to study medicine in a fully integrated medical school and hospital with extensive teaching and research facilities, which serve both teaching and clinical needs. Ninewells Hospital and Medical School is the centre of many areas of pioneering research in cancer, keyhole surgery, heart disease, drug development, and medical education.</p>
 			<p>You will be part of a caring community providing healthcare for Tayside, Fife, and further afield, and have access to a wide range of facilities including lecture theatres, teaching laboratories, library, integrated self-teaching area, computer suite and a leading Clinical Skills Centre. A new education facility is being built on the Ninewells Hospital site which will further enhance the quality of our teaching.</p>
-			
+			<div class="panel panel-default">
+  <div class="panel-body">
+   <h3>Interested? </h3>
+
+<p><a href="#" data-toggle="modal" data-target="#myModal">Let us know your email address</a> and we'll send you more information on this course and others like it.</p>
+  </div>
+
+</div>
+
 			
 				<h4>What our students say</h4>
 				<p><a href="/admissions/student_graduate_profiles/shona_mcdonald/">Shona McDonald</a> is a 1st Year Medical Student<br>"The best thing about my course is the varied way in which you are taught and the fact that the staff value your feedback. Each year the course is updated and improved based on comments from previous students". </p>
@@ -1002,7 +994,24 @@ Our analysis of the 2013 applicants revealed the average calculated from  applic
   	
 	
                      
-            
+            <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
    <!-- Bootstrap core JavaScript-->
 

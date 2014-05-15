@@ -7215,10 +7215,6 @@ body {
     padding-bottom: 0.5em;
   }
 }
-#course-nav {
-  background: #ffffff;
-  border-bottom: 4px solid #305b97;
-}
 .brand-primary {
   background: #305b97;
 }
@@ -7348,6 +7344,13 @@ article {
     float: left;
     width: 25%;
   }
+}
+.course-nav {
+  background: #ffffff;
+  border-bottom: 4px solid #305b97;
+}
+.course-cta {
+  margin-bottom: 1em;
 }
 .footer-wrapper {
   background-color: #f0f0f0;
