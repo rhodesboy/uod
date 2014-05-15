@@ -1,0 +1,146 @@
+
+// Services nav ////////////////////////////////////////////////////////////////////////////     
+    
+ .services-nav {
+	     
+	     padding-top: .3em;
+	     padding-bottom: .1em;
+	     border-bottom: 1px solid @grey-light;
+	     background: url('../img/page-bg-top.png') repeat-x;
+	     background-position: top center;
+	     
+	     
+	     a.services-nav-links {
+  
+    padding: 10px 20px;
+    display: block;
+    font-weight: normal;
+    line-height: @line-height-base;
+    color: @dropdown-link-color;
+    
+    &:hover {
+	    
+	    text-decoration: none;
+	     color: @brand-primary;
+    }
+  }
+
+     
+	    
+    
+.nav {
+
+
+		text-align: left;
+
+  > li {
+
+
+    > a {
+   
+      padding: @nav-link-padding;
+      color: @text-color;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        background-color:transparent;
+      }
+    }
+
+    // Disabled state sets text to gray and nukes hover/tab effects
+    &.disabled > a {
+      color: @nav-disabled-link-color;
+
+      &:hover,
+      &:focus {
+        color: @nav-disabled-link-hover-color;
+        text-decoration: none;
+        background-color: transparent;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // Open dropdowns
+  .open > a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border-color: @link-color;
+    }
+  }
+
+  
+
+ }
+
+
+ 
+    
+     }
+
+
+
+.nav .nav-header {
+  display: block;
+  padding: 10px 20px;
+
+  font-weight: bold;
+  line-height: 18px;
+  color: @grey-dark;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+.nav li + .nav-header {
+  margin-top: 9px;
+}
+
+
+
+
+// The dropdown menu (ul)
+.dropdown-menu {
+
+
+  .box-shadow(0 0px 0px rgba(0,0,0,.175));
+
+
+
+}
+
+.caret {
+   margin-left: 6px;
+  
+}
+
+
+// Sidebar //////////////////////////////////////////////////////////////////////////// 
+
+.sidebar  {
+	
+	
+	li {
+		
+		border-bottom: 1px solid @grey-light;
+		margin: 0;
+		padding:0;
+		
+		&.active > a {
+			
+			background-color: transparent;
+			font-weight: bold;
+			color: @brand-primary;
+			
+			&:hover { background: transparent; color: @brand-primary; }
+		}
+		
+		> a {
+			
+			margin:0;
+			padding:.5em 0 .5em 0em;
+			
+			&:hover { background: transparent;}
+		}
+	}
+}
