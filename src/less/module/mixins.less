@@ -4,6 +4,43 @@
 
 // Mixins ///////////////////////////////////////////////////////////////////////////////
 
+// Panels
+// -------------------------
+
+
+.panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border; @panel-bg; @panel-text-color;) {
+  border-color: @border;
+  background: @panel-bg;
+
+
+  & > .panel-heading {
+    color: @heading-text-color;
+    background-color: @heading-bg-color;
+    border-color: @heading-border;
+
+    + .panel-collapse .panel-body {
+      border-top-color: @border;
+    }
+  }
+  & > .panel-footer {
+    + .panel-collapse .panel-body {
+      border-bottom-color: @border;
+      
+    }
+  }
+  
+ p {
+	  
+	  color: @panel-text-color;
+	  
+	  & > a { color: @panel-text-color; text-decoration: underline;
+		  
+	  }
+  }
+  
+  h2,h3,h4,h5 {  color: @panel-text-color; }
+}
+
 
 
 

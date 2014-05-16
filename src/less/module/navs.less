@@ -145,3 +145,94 @@
 		}
 	}
 }
+
+
+// Tabs /////////////////////////////////////////////////////////////////////////////////////// 
+
+
+
+
+.tab-content {
+   
+    padding: 1.5em;
+    background: @white;
+}
+
+
+   
+     
+ .tabs {
+	 
+		 margin-top: 2em;
+		 
+		 
+		 li {
+			 
+			
+			 font-family: @site-font1;
+			 font-weight: 600;
+			
+		 }
+		 
+		 
+		 
+ }
+ 
+
+
+ 
+  @media (min-width: @screen-lg) {
+  
+  
+  
+  .tabs {
+	  
+	  
+	  
+	  li {
+		  
+		   background: darken(@grey-lighter,7%);
+		  
+		  
+	  }
+  }
+  
+  
+  
+  
+  }
+ 
+ 
+ // Call to action nav //////////////////////////////////////////////////////////////////////////////
+ 
+ 
+ .cta {
+	 
+	 margin-bottom: 1em;
+	 
+	 
+	 li {
+	 
+	background: darken(@brand-secondary2,7%);
+	 
+ 
+		 
+		  a {
+		  
+		  color: @white;
+		  text-transform: uppercase;
+			
+			&:hover { background: darken(@brand-secondary2,9%)} 
+			 
+		 }
+		 
+		 
+		 &:nth-child(2) {  background: darken(@brand-secondary2,4%);  }
+		 &:nth-child(3) {  background: darken(@brand-secondary2,0%);  }
+	 }
+	 
+	
+	 
+ }
+
+ 

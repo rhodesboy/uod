@@ -4,9 +4,10 @@
 
 .btn {
 
-	text-transform: uppercase !important;
-	 font-family: @site-font3;
+	text-transform: uppercase;
+	 font-family: @site-font1;
 	 font-weight: 500;
+	 letter-spacing: .05em;
 	 -webkit-transition: all 0.2s ease-out 0s;
 	 -moz-transition: all 0.2s ease-out 0s;
 	 -ms-transition: all 0.23s ease-out 0s;
@@ -29,6 +30,14 @@
   .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
 
 }
+
+ // White
+
+.btn-light { 
+  .button-variant(@btn-light-color; @btn-light-bg; @btn-light-border);
+
+}
+
 
  // Mid blue
 
