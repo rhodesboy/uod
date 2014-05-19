@@ -7242,6 +7242,12 @@ body {
 .full-width-header {
   padding-top: .5em;
   margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+.full-width-header .course-search .form-control {
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
 }
 .full-width-header header {
   padding-top: 1em;
