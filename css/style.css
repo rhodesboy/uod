@@ -7222,6 +7222,9 @@ body {
   background: #153274;
 }
 .brand-secondary2 {
+  background: #59a1d4;
+}
+.brand-secondary3 {
   background: #c0392a;
 }
 .brand-secondary4 {
@@ -7233,12 +7236,16 @@ body {
 .white {
   background: #ffffff;
 }
+.grey-darker {
+  background: #808080;
+}
 .full-width-header {
+  padding-top: .5em;
   margin-bottom: 2em;
 }
 .full-width-header header {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
   position: relative;
   float: left;
   width: 100%;
@@ -7450,6 +7457,7 @@ footer h4 {
 }
 .footer-gallery-images li {
   float: left;
+  position: relative;
   width: 50%;
   padding: 0em;
   list-style-type: none;
@@ -7460,6 +7468,20 @@ footer h4 {
 }
 .footer-gallery-images li:nth-child(odd) {
   clear: left;
+}
+.footer-gallery-images h4 {
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  min-height: 4em;
+  font-weight: 600;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.44999999999999996);
+  width: 100%;
+  padding: .5em;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .footer-gallery-images li {
@@ -7483,7 +7505,7 @@ footer h4 {
     clear: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .footer-gallery li {
     width: 20%;
   }
@@ -7601,20 +7623,23 @@ footer h4 {
   margin-bottom: 1em;
 }
 .cta li {
-  background: #3c91cd;
+  background: #3184bf;
 }
 .cta li a {
   color: #ffffff;
   text-transform: uppercase;
 }
 .cta li a:hover {
-  background: #348ccb;
+  background: #2f7eb6;
 }
 .cta li:nth-child(2) {
-  background: #4998d0;
+  background: #348ccb;
 }
 .cta li:nth-child(3) {
-  background: #59a1d4;
+  background: #4093ce;
+}
+.cta li:nth-child(4) {
+  background: #4d9ad1;
 }
 /*
 *  Primary Navigation //////////////////////////////////////////////////////////////////
@@ -7720,6 +7745,8 @@ footer h4 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 1em;
+  padding-top: .5em;
 }
 .breadcrumb {
   padding-left: 0 !important;
@@ -7747,7 +7774,7 @@ footer h4 {
   -o-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
   border: 0;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .btn-default {
   color: #ffffff;
@@ -8121,7 +8148,6 @@ fieldset[disabled] .btn-grey-dark.active {
 body {
   font-family: 'Open Sans', sans-serif;
 }
-h1,
 h2,
 h3,
 h4,
@@ -8129,20 +8155,19 @@ h5,
 h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  text-rendering: optimizeLegibility;
   color: #333333;
 }
+h2,
 h3,
 h4,
 h5,
 h6 {
   font-weight: 500;
 }
-header h1 {
+h1 {
   font-family: 'Droid Serif', serif;
-  text-rendering: optimizeLegibility;
-  font-weight: 400;
-  text-transform: none;
+  color: #333333;
+  font-weight: 700;
 }
 .lead {
   font-weight: 300;

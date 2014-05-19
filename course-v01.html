@@ -14,8 +14,7 @@
   
     <link href="css/style.css" rel="stylesheet" media="screen">
     
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400italic,700italic,400,700|Raleway:400,500,600,300' rel='stylesheet' type='text/css'>
-
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Raleway:400,500,600|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -160,9 +159,9 @@
  <div class="container-fluid full-width-header brand-primary">
   <div class="container">
  <div class="row">
- <header><h1>Medicine</h1></header>
 
-  <div class="breadcrumbs-container"><ol class="breadcrumb">
+
+  <div class="breadcrumbs-container hidden-xs"><ol class="breadcrumb">
   <li><a href="#"><i class="fa fa-home"></i></a></li>
   <li><a href="#">Courses</a></li>
   <li><a href="#">Undergraduate Study</a></li>
@@ -172,22 +171,25 @@
 
 
 </div> 
+
+ <form class="form-horizontal" role="form">
+<div class="form-group">
+  
+    <div class="col-xs-9 col-sm-10">
+      <input type="text" class="form-control"  placeholder="Seach for a course">
+    </div> 
+    <button type="submit" class="btn btn-default ">Search</button>
+    
+  </div>
+</form>	
+
 </div> 
 
 </div>
 
     
     
- 
-
-
- 
- 
-
-
-  
-  
-
+    
 
 
 
@@ -201,19 +203,22 @@
 
 	     
 	    <article id="maincontent" role="main" tabindex="-1">   
+	    
+	    	    
+	    
 
-<ul class="nav nav-pills  clearfix">
+<ul class="nav nav-pills pull-right">
      
 
-            <li ><a style="padding-left:3px" href="#"><i class="fa fa-chevron-circle-left"></i> Back to course search</a></li>
+
       
-       <li class="pull-right"><a href="#" title="Email this page" ><i class="fa fa-envelope"></i></a></li>
-      <li class="pull-right"><a href="#"  title="Print this page" ><i class="fa fa-print"></i></a></li>
+       <li><a href="#" title="Email this page" ><i class="fa fa-envelope"></i></a></li>
+      <li><a href="#"  title="Print this page" ><i class="fa fa-print"></i></a></li>
      
       
       
       
-      <li class="pull-right" class="dropdown">
+      <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
      
     Share <i class="fa fa-share"></i>
@@ -228,8 +233,8 @@
 
       
     </ul>
-<div class="clearfix"></div>
-<h2>Medicine</h2>
+
+<h1>Medicine</h1>
 <h4>MBChB</h4>
 <div class="course-meta">
 
@@ -249,7 +254,7 @@
       <li><a href="#">Visit us</a></li>
       <li><a  href="#">Get a Prospectus</a></li>
       
-      
+      <li><a  href="#" data-toggle="modal" data-target="#myModal">Send me more info</a></li>
            
       
       
@@ -343,13 +348,7 @@
 					<li>MBChB Medicine</li>
 					<li>MBChB Medicine Premedical Year Entry</li>
 					</ul>
-			<div class="panel panel-default">
-  
- 
-  <div class="panel-body">  <h3>Interested?</h3>
- <p><a href="#" data-toggle="modal" data-target="#myModal">Let us know your email address</a> and we'll send you more information on this course and others like it.</p>
-  </div>  <div class="panel-footer"><a class="btn btn-default btn-block" href="#" data-toggle="modal" data-target="#myModal">Please send me more info!</a></div>
-</div>
+			
 </div>
   <div class="tab-pane" id="what">
 			<h3>What you'll study</h3>
@@ -817,11 +816,33 @@ Our analysis of the 2013 applicants revealed the average calculated from  applic
 	        
         </div>
 </div>
-	   	    
-	    
+	   	 <br/>
+	    <div class="panel panel-default">
+  
+ 
+  <div class="panel-body">  <h3>Any Questions?</h3>
+ <p>If you have any further questions about the application process, please contact</p>
+ 
+ 
+ 
+  <p>Admission & Student Recruitment
+  University of Dundee<br/>
+  Nethergate<br/>
+  Dundee DD1 4HN<br/>
+  Scotland<br/>
+  T: +44(0) 1382 388585
+	  
+	  
+	  
+  </p>
+ 
+ 
+ 
+  </div> 
+</div>
 	     </article>  
 	    
-	    <aside class="l-left"  role="navigation"> 
+	    <aside class="l-left"> 
 
 
 	<h4>Undergraduate Study</h4>
@@ -838,8 +859,11 @@ Our analysis of the 2013 applicants revealed the average calculated from  applic
     <li><a href="#">Visiting Us</a></li>
       <li><a href="#">Contact us</a></li><ul>
        
+	  
+	  
+
+ 
  </aside>
-	       
   </div>
   
   
@@ -984,7 +1008,11 @@ Our analysis of the 2013 applicants revealed the average calculated from  applic
             
             <div class="container-fluid brand-secondary4 footer-gallery-header">
 	           <div class="row">
-<div class="col-md-12"><h3>Life at the University of Dundee</h3></div> 
+<div class="col-md-12"><h3>Top Tasks</h3>
+<p>To help you get to key information, listed below are some of the most popular pages on our website. If you still can't find what you are looking for then <a href="#">please try using the search.</a></p>
+
+
+</div> 
 	            
 	           
 	             </div>
@@ -992,16 +1020,12 @@ Our analysis of the 2013 applicants revealed the average calculated from  applic
             </div>
             
     <ul class="footer-gallery-images">
-	<li><a href="#"><img  src="img/footer-pic-1.jpg"/></a></li>
-	<li><a href="#"><img  src="img/footer-pic-2.jpg"/></a></li>
-	<li><a href="#"><img  src="img/footer-pic-3.jpg"/></a></li>
-	<li><a href="#"><img  src="img/footer-pic-4.jpg"/></a></li>
-	<li><a href="#"><img  src="img/footer-pic-5.jpg"/></a></li>
-	<li><a href="#"><img  src="img/footer-pic-6.jpg"/></a></li>
-	<li><a href="#"><img  src="img/footer-pic-7.jpg"/></a></li>
-	<li><a href="#"><img  src="img/footer-pic-8.jpg"/></a></li>
-	<li><a href="#"><img  src="img/footer-pic-9.jpg"/></a></li>
-	<li><a href="#"><img  src="img/footer-pic-10.jpg"/></a></li>
+	<li><a href="#"><img  src="img/footer-pic-1.jpg"/><h4>What's the accommodation like?</h4></a></li>
+	<li><a href="#"><img  src="img/footer-pic-2.jpg"/><h4>Find a course</h4></a></li>
+	<li><a href="#"><img  src="img/footer-pic-3.jpg"/><h4>What's it like to study at Dundee?</h4></a></li>
+	<li><a href="#"><img  src="img/footer-pic-4.jpg"/><h4>What facilities are available?</h4></a></li>
+	<li><a href="#"><img  src="img/footer-pic-5.jpg"/><h4>I want to look at the campus</h4> </a></li>
+
 
 					</ul>
   	
