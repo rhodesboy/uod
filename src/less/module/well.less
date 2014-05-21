@@ -1,0 +1,70 @@
+/* well */
+
+// Contents
+// ----------------------------------------------
+// Well
+// ----------------------------------------------
+
+// Well ///////////////////////////////////////////////////////////////////////
+
+.well {
+  .box-shadow(none);
+}
+
+.well{
+	padding: 1.5em 3em;
+}
+
+.effect2
+{
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,1); 
+}
+.effect2:before, .effect2:after
+{
+  background: #777;
+  bottom: 15px;
+  -webkit-box-shadow: 0 15px 10px #999;
+  -moz-box-shadow: 0 15px 10px #999;
+  box-shadow: 0 15px 10px #999;
+  content: "";
+  left: 10px;
+  max-width:300px;
+  position: absolute;
+  top: 80%;
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  width: 50%;
+  z-index: -1;
+}
+.effect2:after
+{
+  left: auto;
+  right: 10px;
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+
+.callout{
+	background: lighten(#ECF0F1, 4%);
+	position: absolute;
+	right: -135px;
+	h4{
+		font-size: 1em;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	ul{
+		padding-left: 0;
+		li{
+			list-style: none;
+		}
+	}
+}

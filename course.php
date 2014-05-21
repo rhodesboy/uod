@@ -23,8 +23,7 @@
     
     
   </head>
-
-<body class="articleleft">
+<body class="l-lft-top-btm">
 
 
    <div class="container-fluid services-nav">
@@ -96,7 +95,7 @@
         </ul>
       </li>
           <li><a  href="#">A-Z</a></li>
-  <li><a  href="#">Search</a></li>
+  <li><a  href="#">Search <i class="fa fa-search"></i></a></li>
     </ul>
     
     
@@ -133,8 +132,8 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li  ><a href="about.htm">Courses</a></li>
-                <li><a href="family-office-services.htm">Campus Life</a></li>
+            <li  ><a href="about.htm">Study</a></li>
+                <li><a href="family-office-services.htm">Student Life</a></li>
                 <li><a href="entrepreneur-services.htm">Research</a></li>
                 <li><a href="industry-focus.htm">Business</a></li>
                  <li><a href="team.htm">Alumni</a></li>
@@ -155,54 +154,68 @@
 
   
       </div>       </div>
- <div class="container-fluid full-width-header brand-primary">
-  <div class="container">
- <div class="row">
-
-
-  <div class="breadcrumbs-container hidden-xs"><ol class="breadcrumb">
-  <li><a href="#"><i class="fa fa-home"></i></a></li>
-  <li><a href="#">Courses</a></li>
-  <li><a href="#">Undergraduate Study</a></li>
-   <li class="active">Medicine</li>
-</ol></div> 
-
-</div> 
-
-
- <form class="form-horizontal" role="form">
-<div class="input-group ">
-  <input type="text" class="form-control" placeholder="Search for a course..."/>
-  <span class="input-group-addon btn btn-default">Search</span>
-</div>
-
-</form>	
-
-
-
-</div> 
-
-</div>
-
-    
-    
-    
-
-
-
  
- <div class="container">
-      <div class="row">
-	        	    
+ 
+ 
+ 
+ <section class="l-container-fluid brand-primary island-bottom">
+  <div class="l-container">	<div class="l-wrap">
+<header class="l-page-lead" role="contentinfo">
+				<h1>Medicine</h1>
+<ol class="breadcrumb">
+  <li><a href="#"><i class="fa fa-home"></i></a></li>
+  <li><a href="#">Study</a></li>
+  <li><a href="#">Undergraduate</a></li><li><a href="#">Courses</a></li>
+   <li class="active">Medicine</li>
+</ol>
+	</header>
 
 
-	         
 
-	     
-	    <article id="maincontent" role="main" tabindex="-1">   
-	    
-	    	    
-	    
+</div> 
+
+</div> 
+
+</section>
+
+       
+    
+    
+    
+	<div class="l-container">
+
+		<div class="l-wrap">
+
+			<aside class="l-sb-left" role="navigation">
+				<ul class="sb-links">
+					<li class="active"><a href="#">Undergraduate</a>
+						<ul class="sb-links-child">
+							<li class="active"><a href="#">Courses</a></li>
+							<li ><a href="#">How to Apply</a></li>
+							<li><a href="#">Fees &amp; Funding</a></li>
+							<li><a href="#">Entry Requirements</a></li>
+							<li><a href="#">International Qualifications</a></li>
+							<li><a href="#">Visit Open Days</a></li>
+							<li><a href="#">Meet Us in Your Area</a></li>
+							<li><a href="#">Make an Enquiry</a></li>
+							<li><a href="#">Download a Prospectus</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Postgraduate</a></li>
+					<li><a href="#">International Students</a></li>
+					<li><a href="#">Visit Open Days</a></li>
+					<li><a href="#">Fees &amp; Funding</a></li>
+					<li><a href="#">Studying at Dundee</a></li>
+					<li><a href="#">Student Life</a></li>
+					<li><a href="#">Make an Enquiry</a></li>
+					<li><a href="#">Download a Prospectus</a></li>
+					<li><a href="#">Employment</a></li>
+					<li><a href="#">Arrivals</a></li>
+				</ul>
+			</aside>
+
+			<article class="l-content-main" id="l-main" role="main">
+    
 
 <ul class="nav nav-pills pull-right">
      
@@ -251,7 +264,6 @@
       <li><a href="#">Visit us</a></li>
       <li><a  href="#">Get a Prospectus</a></li>
       
-      <li><a  href="#" data-toggle="modal" data-target="#myModal">Send me more info</a></li>
            
       
       
@@ -271,7 +283,7 @@
 
 
 
-            <ul class="nav tabs nav-pills">
+            <ul class="nav tabs nav-pills ">
   <li class="active"><a href="#why" data-toggle="tab">Why Dundee?</a></li>
   <li><a href="#what" data-toggle="tab">What You'll Study</a></li>
   <li><a href="#employability" data-toggle="tab">Employability</a></li>
@@ -592,13 +604,13 @@ All offers to current PhD students will be conditional on the formal submission 
 				
 <h4>English Language Pre-Sessional Programmes</h4>
 <p>We offer <a href="http://www.dundee.ac.uk/admissions/international/courses/pre_sessional_programmes_certificate.htm">Pre-Sessional  programmes</a> and <a href="http://www.dundee.ac.uk/admissions/international/courses/foundation_programme_30_weeks.htm">Foundation Programme(s)</a> which are designed to prepare you for university study, the 24  week and 10 week programmes provide additional English Language tuition for  students who do not meet our minimum English Language requirements by up to 1.0  IELTS and 0.5 IELTS respectively. Successful completion of these programmes  guarantees progression to various degrees at the University of Dundee as long as you hold a relevant offer.  The 30 week (one Academic Year) <a href="http://www.dundee.ac.uk/admissions/international/courses/foundation_programme_30_weeks.htm">Foundation Programme(s)</a> allow applicants who have not met our typical academic entry requirements, and require additional English Language support by up to 1.0 to 1.5 IELTS, to gain the necessary qualifications to enter the University of Dundee degree programmes in the following year.  </p></div>
-      <div class="tab-pane" id="fees"><h3>Fees and Funding</h3>
+      <div class="tab-pane" id="fees"><h2>Fees and Funding</h2>
 				<p>There have been many changes to the arrangements for funding students entering higher education in recent years, yet a degree from the University of Dundee, with its high rate of employment success, remains a cost-effective option.</p>
 				<p>The fees you pay will, in most cases, depend on your current country of residence.</p>
 				
 
 	<p>The fee shown is annual, and may be subject to an increase each year.</p>
-				<table class="ug_courses_table" cellpadding="0" cellspacing="0" border="0">
+				<table class="table table-bordered table-striped table-hover" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 				<th class="table_dark" width="25%">Fee category</th>
 				<th class="table_dark" width="75%">Fees for students starting September 2014</th>
@@ -637,7 +649,7 @@ You can apply to the <a href="http://www.saas.gov.uk/">Students Award Agency for
 
 <h3>Scholarships & Bursaries</h3>
 				
-                <table class="ug_courses_table" cellpadding="0" cellspacing="0" border="0">
+                <table class="table table-bordered table-striped table-hover" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 				<th width="25%" class="table_dark">Fee category</th>
 				<th width="75%" class="table_dark">Scholarships &amp; Bursaries applicable</th>
@@ -691,7 +703,7 @@ You can apply to the <a href="http://www.saas.gov.uk/">Students Award Agency for
         <div class="tab-pane" id="apply">
 	        
 	        
-	        <h3>Your Application</h3>
+	        <h2>Your Application</h2>
 			
 			<p>All applications must be made through <a href="http://www.ucas.com/" onclick="javascript: pageTracker._trackPageview('/admissions/external/' + this.href);">UCAS</a></p>
 			
@@ -718,7 +730,7 @@ You can apply to the <a href="http://www.saas.gov.uk/">Students Award Agency for
 			</table>
 
 			
-			<h4>UCAS Application Process</h4>
+			<h3>UCAS Application Process</h3>
 			<iframe src="http://embed.buto.tv/69dr7" width="640" height="360" frameborder="0" scrolling="no"></iframe>
 <br />
 
@@ -726,9 +738,9 @@ You can apply to the <a href="http://www.saas.gov.uk/">Students Award Agency for
 			<h3>How will my application be assessed?</h3>
 <p>Applications are ranked on academic achievement and UKCAT score. The top  550 will be invited to select an interview time to suit them via our online  booking tool. We also invite applicants to provide information about any  adverse circumstances which could have affected their education and  applications will then be ranked again using this extra information and  approximately another 50 invitations to interview will be issued.</p>
 <p>From the 2013 entry cycle the aspects  scored are :</p>
-<h4>Academic</h4>
+<h3>Academic</h3>
 					<p>All applicants must offer our minimum  academic requirements but those with evidence of higher academic achievements will  be rated more highly. We consider the primary qualification (A levels, Highers,  Degree class etc) and also the relevant previous stage (GCSE, Standard Grades,  School exit exams etc. as appropriate). So past achievements are relevant as  are exceptional achievements such as 6 Highers A grades in one sitting, Masters  degrees, PhD etc. The high level of competition means the minimum  qualifications will rarely secure an interview without an exceptional UKCAT  score.</p>
-					<h4>UKCAT</h4>
+					<h3>UKCAT</h3>
                     <p>Your UKCAT score will be factored into the pre-interview rank. There is  no specific cut off applied but obviously a high score is advantageous.<br />
                       <br />
 Our analysis of the 2013 applicants revealed the average calculated from  applications received was 2520 and the average for those gaining offers was 2720. </p>
@@ -738,21 +750,21 @@ Our analysis of the 2013 applicants revealed the average calculated from  applic
 <p>From 2013 cycle information on  non-academic achievements and references will not be considered until  interview. </p>
 					<p> Thereafter, we aim to rate  applications as fairly as possible based upon the various forms of other  evidence which is presented on the UCAS form. There is no ideal formula and we  would not wish to promote particular activities. Hence we consider these under  separate headings, which receive equal weight.</p>
 <p> Some examples are given below but this  list is not exclusive or exhaustive. The selectors will consider achievement in  all areas and prefer evidence in more than one area. Non-academic achievements  will be discussed at interview and we may seek confirmation of these at our  discretion.</p>
-                    <ul type="square">
+                    <ul>
                       <li>Competitive achievement – e.g.       chess or sport at national level or above </li>
                       <li>Talents – music, drama, public       speaking, leadership qualities </li>
                       <li>Social responsibility –       voluntary work, teamwork, youth organisations </li>
                       <li>Employment – entrepreneurial,       sustained engagement, achievement					</li>
 </ul>
-                    <h4>Medical Experience</h4>
+                    <h3>Medical Experience</h3>
 					<p>We encourage up to two weeks relevant  work experience (or equivalent) as it is helpful for providing awareness of and  insight into career choice. This will be discussed at interview but is not  scored. We do not credit the volume of work experience and would discourage  applicants seeking to acquire experience in excess of that required to inform career  choice. We do not encourage work experience in resource poor settings where you  may be exposed to risk or take up scarce staff time.</p>
 					<p> Please note we intend to ask applicants  to inform us where their experience has been acquired and verify a selection.</p>
-<h4>Contextual Assessment</h4>
+<h3>Contextual Assessment</h3>
 					<p>Dundee Medical School seeks to operate as  transparent and fair admissions process as possible. To assist this we have  introduced a formal system by which candidates can inform us of major adverse  factors which they believe have had a significant impact on their application.  Examples might be personal illness or a role as a carer.</p>
 					<p> We invite all applicants to do so  through a web based questionnaire in October. These are used as described in  the relevant section. Please note <strong>ALL </strong>claims will require supporting documentary evidence and/or an  additional interview if an offer is being made because of an adjustment for an  applicant's background.</p>
-<h4>Reference</h4>
+<h3>Reference</h3>
 					<p>The professional assessment offered by the referee on the UCAS form is  also considered.&nbsp;</p>
-					<h4>Weighting  of components</h4>
+					<h3>Weighting  of components</h3>
 
 					<p>The precise weighting of the components is reviewed 'in cycle' each year  and may be modified according to the distribution of scores presented and in  the process of considering contextual factors. However, the basic schema  balances the Academic score (60%), UKCAT decile (40%) for school leavers and UKCAT  decile (60%), Academic score (40%) for graduates. Following interview, provided  the process has run smoothly, candidates are ranked on the interviews score  alone, i.e there is a 'clean slate' with no carryover of the pre-interview  rank.</p>
 <h4>Video guide: applying to study Medicine at Dundee</h4>
@@ -814,10 +826,10 @@ Our analysis of the 2013 applicants revealed the average calculated from  applic
         </div>
 </div>
 	   	 <br/>
-	    <div class="panel panel-default">
+	   	<div class="well  effect2">
   
  
-  <div class="panel-body">  <h3>Any Questions?</h3>
+ <h3>Any Questions?</h3>
  <p>If you have any further questions about the application process, please contact</p>
  
  
@@ -834,42 +846,11 @@ Our analysis of the 2013 applicants revealed the average calculated from  applic
   </p>
  
  
- 
-  </div> 
-</div>
-	     </article>  
-	    
-	    <aside class="l-left"> 
+ 		</article>
 
+		</div><!-- / .l-wrap -->
 
-	<h4>Undergraduate Study</h4>
-		<ul class="nav nav-pills nav-stacked sidebar">
-  <li class="active"><a  href="#">Why Dundee?</a></li>
-  <li><a href="#">Our City Campus</a></li>
-  <li><a href="#" class="active2">Student Life</a></li>
-  <li><a href="#">Meet our Students</a></li>
-  <li><a href="#">International Students</a></li>
-  <li><a href="#">Mature Students</a></li>
-  <li><a href="#">Money Matters</a></li>
-    <li><a href="#">Careers and Your Future</a></li>
-  <li><a href="#">Information for Parents</a></li>
-    <li><a href="#">Visiting Us</a></li>
-      <li><a href="#">Contact us</a></li><ul>
-       
-	  
-	  
-
- 
- </aside>
-  </div>
-  
-  
-          
-
-      
-      
-      </div>
- 
+	</div><!-- / .l-container --> 
       
       
       

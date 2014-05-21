@@ -6,31 +6,45 @@
 @imgPath: '../img/';
 @icon-font-path:          "fonts/";
 
-// Fonts
-// ----
 
-@site-font1: 'Raleway', sans-serif;
-@site-font2: 'Droid Serif', serif;
-@site-font3: 'Open Sans',  sans-serif;
 
 // Base Text Color
 // -------------------------
 
-@text-color:  hsl(0, 0%, 33%); //#545454
+@text-color:  hsl(0, 0%, 35%); 
 
-//** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.5; // 21/14
-@headings-line-height:    1.3;
+
+
+// Font sizes
+// -------------------------
+
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 
 // Greys
 // -------------------------
 
-@grey-darker:            hsl(0, 0%, 50%); // #808080
-@grey-dark:              hsl(0, 0%, 60%); // #999999
-@grey:                   hsl(0, 0%, 75%); // #bfbfbf
-@grey-light:             hsl(0, 0%, 88%); // #e0e0e0
-@grey-lighter:           hsl(0, 0%, 94%); // #f2f2f2
+
+
+
+@gray-darker:            hsl(0, 0%, 40%); // #808080
+@gray-dark:              hsl(0, 0%, 60%); // #999999
+@gray:                   hsl(0, 0%, 75%); // #bfbfbf
+@gray-light:             hsl(0, 0%, 85%); // #e0e0e0
+@gray-lighter:           hsl(0, 0%, 94%); // #f2f2f2
+
+
+
+// Black and white
+// -------------------------
 
 
 @black:  hsl(0, 0%, 0%);
@@ -69,7 +83,7 @@
 // Horizontal Rules
 // 
 
-@hr-border: @grey-light;
+@hr-border: @gray-light;
 
 
 
@@ -78,10 +92,7 @@
 @footer-default-link-color: @brand-primary;
 @footer-default-link-hover-color: @brand-primary;
 
-// Breadcrumbs // 
 
-@breadcrumb-bg: transparent;
-@breadcrumb-color:    @white;
 
 
 // Panels //
@@ -131,7 +142,7 @@
 
 @btn-light-color:              @text-color;
 @btn-light-bg:                 @white;
-@btn-light-border:            darken(@grey-light, 7%); 
+@btn-light-border:            darken(@gray-light, 7%); 
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
@@ -158,9 +169,9 @@
 @btn-secondary5-border:             darken(@brand-secondary5, 7%);
 
 
-@btn-grey-dark-color:              #fff;
-@btn-grey-dark-bg:                 @grey-dark;
-@btn-grey-dark-border:             darken(@grey-dark, 7%);
+@btn-gray-dark-color:              #fff;
+@btn-gray-dark-bg:                 @gray-dark;
+@btn-gray-dark-border:             darken(@gray-dark, 7%);
 
 
 @border-radius-base:        0px;
@@ -168,8 +179,296 @@
 @border-radius-small:       0px;
 
 
- @component-active-bg: @white;
- @component-active-color:  @text-color;
+
  
  
- 
+ // Typography /////////////////////////////////////////////////////////////////
+
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif2:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif2;
+
+@font-size-base:          15px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.71428571; // 24/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    @font-family-sans-serif;
+@headings-font-weight:    400;
+@headings-line-height:    1.2;
+@headings-color:          inherit;
+
+// Components /////////////////////////////////////////////////////////////////
+
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     10px;
+@padding-base-horizontal:   15px;
+
+@padding-large-vertical:    18px;
+@padding-large-horizontal:  27px;
+
+@padding-small-vertical:    6px;
+@padding-small-horizontal:  9px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@line-height-large:         1.33;
+@line-height-small:         1.5;
+
+@border-radius-base:        0px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color:    @text-color;
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg:        @white;
+
+//** Width of the `border` for generating carets that indicator dropdowns.
+@caret-width-base:          4px;
+//** Carets increase slightly in size for larger components.
+@caret-width-large:         5px;
+
+// Tables /////////////////////////////////////////////////////////////////////
+
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+@table-cell-padding:            8px;
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding:  5px;
+
+//** Default background color used for all tables.
+@table-bg:                      transparent;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               #f9f9f9;
+//** Background color used for `.table-hover`.
+@table-bg-hover:                @gray-lighter;
+@table-bg-active:               @table-bg-hover;
+
+//** Border color for table and cell borders.
+@table-border-color:            @gray-lighter;
+
+
+
+// Forms //////////////////////////////////////////////////////////////////////
+
+//** `<input>` background color
+@input-bg:                       #fff;
+//** `<input disabled>` background color
+@input-bg-disabled:              @gray-lighter;
+
+//** Text color for `<input>`s
+@input-color:                    @text-color;
+//** `<input>` border color
+@input-border:                   #dce4ec;
+//** `<input>` border radius
+@input-border-radius:            @border-radius-base;
+//** Border color for inputs on focus
+@input-border-focus:             @brand-primary;
+
+//** Placeholder text color
+@input-color-placeholder:        #acb6c0;
+
+//** Default `.form-control` height
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+//** Large `.form-control` height
+@input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+//** Small `.form-control` height
+@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+@legend-color:                   @text-color;
+@legend-border-color:            transparent;
+
+//** Background color for textual input addons
+@input-group-addon-bg:           @gray-lighter;
+//** Border color for textual input addons
+@input-group-addon-border-color: @input-border;
+
+
+// Dropdowns //////////////////////////////////////////////////////////////////
+
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+@dropdown-bg:                    #fff;
+//** Dropdown menu `border-color`.
+@dropdown-border:                rgba(0,0,0,.15);
+//** Dropdown menu `border-color` **for IE8**.
+@dropdown-fallback-border:       #ccc;
+//** Divider color for between dropdown items.
+@dropdown-divider-bg:            #e5e5e5;
+
+//** Dropdown link text color.
+@dropdown-link-color:            darken(@gray-darker,20%);
+//** Hover color for dropdown links.
+@dropdown-link-hover-color:      #fff;
+//** Hover background for dropdown links.
+@dropdown-link-hover-bg:         @dropdown-link-active-bg;
+
+//** Active dropdown menu item text color.
+@dropdown-link-active-color:     #fff;
+//** Active dropdown menu item background color.
+@dropdown-link-active-bg:        @component-active-bg;
+
+//** Disabled dropdown menu item background color.
+@dropdown-link-disabled-color:   @text-muted;
+
+//** Text color for headers within dropdown menus.
+@dropdown-header-color:          @text-muted;
+
+// Note: Deprecated @dropdown-caret-color as of v3.1.0
+@dropdown-caret-color:           #000;
+
+
+
+// Z-index master list ////////////////////////////////////////////////////////
+
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1010;
+@zindex-tooltip:           1030;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+
+
+
+// Media queries breakpoints //////////////////////////////////////////////////
+
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+// Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+
+// Grid system ////////////////////////////////////////////////////////////////
+
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+
+// Container sizes ////////////////////////////////////////////////////////////
+
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+@container-tablet:             ((720px + @grid-gutter-width));
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((940px + @grid-gutter-width));
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      ((1140px + @grid-gutter-width));
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+// Breadcrumbs ////////////////////////////////////////////////////////////////
+
+@breadcrumb-padding-vertical:   8px;
+@breadcrumb-padding-horizontal: 15px;
+
+//** Breadcrumb text color
+@breadcrumb-color:              darken(@brand-primary,14%);
+//** Text color of current page in the breadcrumb
+@breadcrumb-active-color:        darken(@brand-primary,14%);
+//** Textual separator for between breadcrumb elements
+@breadcrumb-separator:          "/";
+//** Breadcrumb background color
+
+@breadcrumb-bg: transparent;
+
+
+
+// Navs ///////////////////////////////////////////////////////////////////////
+
+//=== Shared nav styles
+@nav-link-padding:                          10px 10px;
+@nav-link-hover-bg:                         @gray-lighter;
+
+@nav-disabled-link-color:                   @gray-light;
+@nav-disabled-link-hover-color:             @gray-light;
+
+@nav-open-link-hover-color:                 #fff;
+
+//== Tabs
+@nav-tabs-border-color:                     @gray-lighter;
+
+@nav-tabs-link-hover-border-color:          @gray-lighter;
+
+@nav-tabs-active-link-hover-bg:             @body-bg;
+@nav-tabs-active-link-hover-color:          @brand-primary;
+@nav-tabs-active-link-hover-border-color:   @gray-lighter;
+
+@nav-tabs-justified-link-border-color:            @gray-lighter;
+@nav-tabs-justified-active-link-border-color:     @body-bg;
+
+//== Pills
+@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-active-link-hover-bg:            @component-active-bg;
+@nav-pills-active-link-hover-color:         @component-active-color;
